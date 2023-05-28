@@ -25,6 +25,8 @@ export default defineConfig({
       seashell: "#FCFAF9",
       "black-russian": "#191826",
       coral: "#FA7453",
+      "turquoise-blue": "#66E2DC",
+      rajah: "#FFB964",
     },
     breakpoints: {
       tablet: "768px",
@@ -35,6 +37,7 @@ export default defineConfig({
     logo: "w-146.09 h-32",
     button:
       "fw-700 fs-18 leading-32 -tracking-.18 flex items-center justify-center gap-y-7.92 pt-15 pb-14 rounded-12",
+    svg: "cursor-pointer active:fill-coral",
   },
   rules: [
     [
@@ -214,6 +217,24 @@ export default defineConfig({
       ([, value]) => ({
         "background-position-x": convertToRem(value),
       }),
+    ],
+    [
+      /^mx-([\d.-]+)$/,
+      ([, value]) => ({
+        "margin-inline": convertToRem(value),
+      }),
+    ],
+    [
+      "grid-cols-footer",
+      {
+        "grid-template-columns": "14.609rem 1fr 1fr",
+      },
+    ],
+    [
+      "bg-desktop",
+      {
+        "background-image": "url(/bg-main-desktop.png)",
+      },
     ],
   ],
 });
