@@ -13,15 +13,28 @@
     <script type="module" src="src/_authorModal.ts" async></script>
   </head>
   <body>
-    <main class="bg-mobile bg-no-repeat -bg-y-275">
+    <main
+      class="bg-mobile bg-no-repeat -bg-y-275 tablet:bg-tablet tablet:-bg-y-250 tablet:-bg-x-400"
+    >
       <h1 class="sr-only"></h1>
-      <header class="pt-40 px-24">
+      <header
+        class="pt-40 px-24 tablet:pt-62 tablet:pr-209 tablet:pl-39 tablet:relative tablet:overflow-hidden"
+      >
+        <img
+          class="hidden tablet:block absolute w-266.67 h-400 -top-32 -right-36"
+          src="/bg-pattern-1.svg"
+          alt=""
+        />
         <img class="logo" src="/logo.svg" alt="Equalizer Logo" />
-        <div class="mt-64 text-black-russian">
-          <h2 class="fw-700 fs-40 leading-48 -tracking-.45">
+        <div class="mt-64 text-black-russian tablet:mt-95">
+          <h2
+            class="fw-700 fs-40 leading-48 -tracking-.45 tablet:fs-64 tablet:leading-64 tablet:-tracking-.73"
+          >
             We make your music sound extraordinary.
           </h2>
-          <p class="mt-10 fs-16 leading-26">
+          <p
+            class="mt-10 fs-16 leading-26 tablet:mt-28 tablet:fs-18 tablet:leading-28"
+          >
             A system audio equalizer specifically designed for Android and iOS.
             Freely tune the way your music sounds with a professional grade
             parametric EQ & volume mixer. Control bass, mids, treble, gain
@@ -30,15 +43,15 @@
         </div>
       </header>
       <div
-        class="bg-black-russian h-600 relative bg-pattern bg-no-repeat bg-top-center bg-auto mt-166 overflow-visible bs-280/420"
+        class="bg-black-russian h-600 relative bg-pattern bg-no-repeat bg-top-center bg-auto mt-166 overflow-visible bs-280/420 tablet:mt-239 tablet:ml-33 tablet:mr-39 tablet:rounded-12 -bg-y-31"
       >
         <img
-          class="absolute w-208.97 h-430 left-1/2 -translate-x-1/2 -top-96"
+          class="absolute w-208.97 h-430 left-1/2 -translate-x-1/2 -top-96 tablet:w-270.21 tablet:h-556 tablet:left-0 tablet:translate-x-64"
           src="/illustration-app.png"
           alt=""
         />
         <div
-          class="bg-coral py-48 px-36 c-seashell rounded-12 flex flex-col absolute top-380"
+          class="bg-coral py-48 px-36 c-seashell rounded-12 flex flex-col absolute top-380 tablet:max-w-400 tablet:p-48 tablet:top-150 tablet:right-58"
         >
           <h3 class="fw-700 fs-32 leading-40">Premium EQ</h3>
           <p class="mt-12 fs-18 leading-28">
@@ -73,15 +86,19 @@
           </button>
         </div>
       </div>
-      <footer class="mt-390 px-24 pb-80">
-        <img class="logo" src="/logo.svg" alt="" />
-        <p class="mt-32 fs-16 leading-26">
+      <footer
+        class="mt-390 px-24 pb-80 tablet:mt-183 tablet:pl-33 tavlet:pr-39 tablet:pb-85 grid tablet:grid-cols-2 gap-x-32"
+      >
+        <img class="logo tablet:col-span-2" src="/logo.svg" alt="" />
+        <p class="fs-16 leading-26">
           All rights reserved &copy; Equalizer 2021
           <br />
           Have any problems? Contact us via social media or email us at
           <strong class="whitespace-nowrap">equalizer@example.com</strong>
         </p>
-        <div class="mt-64 flex gap-y-20">
+        <div
+          class="mt-32 flex gap-y-20 tablet:mt-0 tablet:justify-self-end tablet:self-center"
+        >
           <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0Z"
